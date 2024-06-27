@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="cadastrocss.css">
+<title>Your Site Title</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script src="cadastro.js" defer></script>
+<div class="container_form">
+    <h1>Formulário de Cadastro</h1>
+    <form class="form" action="#" method="post">
+        
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Nome</label>
+            <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+        </div>
+        
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Id</label>
+            <input type="text" name="nome" class="form_input" id="nome" placeholder="Id" required>
+        </div>
+        
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Valor</label>
+            <input type="text" name="nome" class="form_input" id="nome" placeholder="Valor" required>
+        </div>    
+        <div class="form_grupo">
+            
+            <label for="estadocivil" class="text">Categoria</label>
+            <select name="estadocivil" class="dropdown" required>
+                
+                <option selected disabled class="form_select_option" value="">Selecione</option>
+                <option value="Caderno" class="form_select_option">Caderno</option>
+                <option value="Bottom " class="form_select_option">Bottom </option>
+                <option value="Marca páginas" class="form_select_option">Marca páginas</option>                    
+                <option value="Adesivos" class="form_select_option">Adesivos</option>                    
+                <option value="Poster" class="form_select_option">Poster</option> 
+                <option value="Folhas Para Anotação" class="form_select_option">Folhas Para Anotação</option> 
+            </select>
+        </div>
+        <div class="form_grupo">
+           
+      
+        
+            <label class="picture" for="picture__input" tabIndex="0">
+                <span class="picture__image"></span>
+              </label>
+              
+              <input type="file" name="picture__input" id="picture__input">
+            <div class="form_message">
+                
+                <label for="message" class="form_message_label"> Descrição:</label>
+                <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+            </div>
+            
+            <div class="submit">
+              <input type="hidden" name="acao" value="enviar">
+              <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+            
+            
+            </div>
+    </form>
+</div><!--container_form-->
+
+</body>
+
+</html>
